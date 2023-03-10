@@ -1,0 +1,86 @@
+/* Set the height of the body and html tags to 100% to ensure the hero div takes up the full height of the viewport */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Roobert';
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Set the height of the hero div to 100% to take up the full height of the viewport */
+  height: 100vh;
+  background: linear-gradient(239.85deg, rgba(197, 227, 220, 0.5) 17.73%, rgba(255, 209, 209, 0.5) 97.19%);
+}
+
+
+/* the street and open app at the top*/
+
+.nav-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  padding-bottom: 30px;
+  /* Set the position of the nav-top div to be fixed so it remains at the top of the viewport */
+  top: 0;
+  
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(22, 27, 25, 0.12);
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+/*top left street logo*/
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*top right open app button*/
+.button {
+  display: inline-block;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 16px;
+  background-color: black;
+  padding: 12px 24px;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+.statistics-info {
+  display: flex;
+  align-items: center;
+}
+
+.treasury-balance {
+  font-weight: bold;
+} 
