@@ -1,110 +1,81 @@
 body {
-  margin: 0
-  ;
+  margin: 0;
 }
 
+* {
+  font-family: 'Inter';
+}
 /*Hero Section*/
 
-#hero {
-  display: flex;
+.hero-container {
+
   position: relative;
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(239.85deg, rgba(197, 227, 220, 0.5) 17.73%, rgba(255, 209, 209, 0.5) 97.19%);
 
 }
 
-/*Nav bar*/
-.hero-nav {
-  display: absolute;
-  width: 100vw;
+.hero-navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 8.5vh;
+  border-bottom: 1px solid black;
+  margin: 0 10vw;
+  align-items: center;
+  
 }
-
-.logo{
- float: left;
-
-}
-
-.open-app {
- float: right;}
-
-
 
 .logo {
-  color: #293033;
-  font-size: 1.75em;
+  font-family: 'Inter';
+  font-size: 1.75rem;
+  line-height: 28px;
   font-weight: 500;
+  color: #293033;
+
 }
 
 .open-app {
   border: 1px solid black;
-  border-radius: 1em;
-  background-color: #161B19;
+  border-radius: 1rem;
+  padding: 12px 32px;
   color: white;
-  font-size: 1.25em;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 0.5em 1em;
+  background-color: black;
+  font-size: 1.25rem;
+  
 }
 
-.hero-left {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  left: 24px;
-  
+.hero-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: space-between;
+  margin-inline: 10vw;
+
+}
+
+.hero-header {
+  font-family: Roobert;
+  font-size: 64px;
+  font-weight: 500;
+  max-width: 128px;
+
+}
+
+.hero-paragraph {
+  font-family: Roobert;
+  font-size: 1.4rem;
+}
+
+.hero-buttons {
   max-width: 392px;
-
+  font-family: Roobert;
+  justify-content: space-between;
 }
 
-.hero-left-header {
- max-inline-size: 8em;
- font-size: clamp( 1.5em, 25vw, 20vh); 
- align-items: ;
- margin-bottom: 10px;
-}
+.borrow-button, .lend-button {
+  border: 1px solid black;
+  border-radius: 1rem;
 
-
-
-.
-
-/* Statistics */
-
-#statistics {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 30vh;
-  
-}
-
-
-/* Investor section*/ 
-
-#investors {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #161B19;
-}
-
-/* How it works*/
-
-#how-it-works {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: linear-gradient(215.39deg, rgba(197, 227, 220, 0.159) 11.64%, rgba(255, 209, 209, 0.138) 63.82%);
-}
-
-/* Footer */
-
-#footer {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 20vh;
-  background-color: #161B19;
 }
