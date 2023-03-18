@@ -9,6 +9,7 @@ body {
 /*Hero Section*/
 
 .hero-container {
+  
   position: relative;
   background: linear-gradient(239.85deg, rgba(197, 227, 220, 0.5) 17.73%, rgba(255, 209, 209, 0.5) 97.19%);
 
@@ -19,28 +20,42 @@ body {
 .hero-navbar {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(22, 27, 25, 0.18);
-  margin: 0 10vw;
+  margin-inline: 10vw;
   align-items: center;
+  flex-wrap: wrap;
+  
   
 }
 
 .logo {
+  display: flex;
   font-family: 'Roobert';
   font-size: 1.75rem;
   line-height: 28px;
   font-weight: 500;
   color: #293033;
+  width: 50%;
+  margin-top: 2.9%;
 
 }
 
 .open-app {
+  display: flex;
   border: 1px solid black;
   border-radius: 1rem;
   padding: 12px 32px;
   color: white;
   background-color: black;
   font-size: 1.25rem;
+  margin-top: 3%;
+  
+  
+}
+
+.hero-line {
+  border: 1px solid rgba(22, 27, 25, 0.18);
+  margin-top: 3%;
+  width: 100%;
   
 }
 
@@ -56,6 +71,7 @@ body {
 }
 
 .hero-header {
+  margin-top: 12%;
   font-family: Roobert;
   font-style: normal;
   font-size: clamp(4rem, 128px, 20vw);
@@ -88,6 +104,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  margin-bottom: 10%;
 
 }
 
@@ -150,13 +167,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: #161b19;
-  width: 100vw;
-  gap: 86px;
+  width: 100%;
   position: relative;
 }
 
 .investors-headline {
-  margin-top: 18%;
+  margin-top: 7.3%;
   font-family: Roobert;
   font-style: normal;
   font-size: clamp(3rem, 96px, 20vw);
@@ -167,7 +183,7 @@ body {
   margin-inline: 10vw;
   color: #ebe3e2;
   width: 100%;
-  border: 1px solid blue;
+
 } 
 
 .investors-paragraph {
@@ -180,32 +196,36 @@ body {
   font-weight: 400;
   letter-spacing: -0.03em;
   opacity: 0.9;
-  margin-top: 5.6%;
+  margin-top: 4.5%;
   margin-inline: 10vw;
   width: 100%;
+
 
 }
 .investors-img-section {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
-  margin: 10vw;
+  margin-inline: 10vw;
+  margin-top: 4.5%;
+  margin-bottom: 13.6%;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  row-gap: 85px;
   width: 100%;
+  max-width: 1920px;
+
 
 }
 
 .investors-box1, .investors-box2, .investors-box3 {
-  margin: 10px;
-  
+  width: 100%;
+  max-width: 450px;
+
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  width: 450px;
+  max-width: 450px;
 
 }
 
@@ -239,7 +259,7 @@ color: #EBE3E2;
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient(215.39deg, rgba(197, 227, 220, 0.159) 11.64%, rgba(255, 209, 209, 0.138) 63.82%);
-  width: 100vw;
+  width: 100%;
   position: relative;
   justify-content: center;
 }
@@ -333,3 +353,97 @@ color: #EBE3E2;
 
 /* Footer Section */
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background:#161B19;
+  position: relative;
+  width: 100%;
+
+}
+
+.footer-nav {
+  margin-top: 4.5%;
+  margin-left: 13.3vw;
+  margin-right: 7.6vw;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1520px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer-logo {
+  max-width: 79px;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+/* .footer-divider {
+  border: 1px solid red;
+  max-width: 977px;
+  width: 100%;
+  
+} */
+
+.footer-items {
+  display: flex;  
+  font-family: 'Roobert';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9AA5A0;
+  width: 100%;
+  max-width: 464px;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+ul, li {
+  list-style: none;
+  gap: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-line {
+  border: 1px solid rgba(69, 80, 75, 1);
+  width: 100%;
+  margin-bottom: 7.5%;
+
+}
+
+.footer-bottomitems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 7.7%;
+  flex-wrap: wrap;
+ 
+}
+
+.bottomitems-copyright {
+  font-family: 'Roobert';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 315px;
+  color: #9AA5A0;
+
+}
+
+.bottomitems-contact {
+  font-family: 'Roobert';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9AA5A0;
+}
